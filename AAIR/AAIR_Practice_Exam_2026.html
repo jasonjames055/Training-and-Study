@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISACA AAIR Practice Exam — 90 items</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#1d2330;--muted:#5d6675;--line:#dde1e7;--brand:#0b4f6c;--brand2:#127fa8;--ok:#1b7f3b;--bad:#b42318;--warn:#a15c00;--sel:#e6f2f8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+header.top{background:var(--brand);color:#fff;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5}
+header.top b{font-weight:650;letter-spacing:.2px}
+#timer{font-variant-numeric:tabular-nums;font-weight:650;background:rgba(255,255,255,.14);padding:4px 10px;border-radius:6px}
+main{max-width:900px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin:0 0 16px}
+h1{font-size:1.5rem;margin:.2em 0 .4em}h2{font-size:1.2rem;margin:.2em 0 .6em}h3{font-size:1.05rem;margin:1em 0 .4em}
+.muted{color:var(--muted)}.small{font-size:.88rem}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+th{background:#f0f3f6;font-weight:600}
+.btn{appearance:none;border:1px solid var(--brand);background:var(--brand);color:#fff;border-radius:8px;padding:10px 16px;font-size:1rem;cursor:pointer;font-weight:600}
+.btn.sec{background:#fff;color:var(--brand)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.spread{justify-content:space-between}
+label.opt{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:8px 0;cursor:pointer;background:#fff}
+label.opt:hover{border-color:var(--brand2)}
+label.opt.on{background:var(--sel);border-color:var(--brand2)}
+label.opt input{margin-top:4px}
+.letter{font-weight:700;min-width:1.4em}
+.stem{font-size:1.06rem;margin:6px 0 14px}
+.bar{height:8px;background:#e5e8ec;border-radius:6px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--brand2)}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.8rem;font-weight:600;background:#eef1f4;color:var(--muted)}
+.pass{color:var(--ok)}.fail{color:var(--bad)}
+.verdict{font-size:2rem;font-weight:800;margin:.1em 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:6px;margin-top:10px}
+.grid button{border:1px solid var(--line);background:#fff;border-radius:6px;padding:6px 0;font-size:.82rem;cursor:pointer}
+.grid button.ans{background:#dbeaf2}.grid button.flag{outline:2px solid var(--warn)}.grid button.cur{border-color:var(--brand);font-weight:700}
+.ak{border-top:1px solid var(--line);padding:14px 0}
+.ak:first-child{border-top:0}
+.tag-ok{color:var(--ok);font-weight:700}.tag-bad{color:var(--bad);font-weight:700}.tag-na{color:var(--warn);font-weight:700}
+.exp{background:#f7f9fb;border-left:3px solid var(--brand2);padding:8px 12px;margin-top:8px;border-radius:0 6px 6px 0}
+.src{font-size:.85rem;color:var(--muted);margin-top:4px}
+.notice{background:#fff8e6;border:1px solid #f1d48a;border-radius:8px;padding:10px 14px;font-size:.92rem}
+select,input[type=text]{font-size:1rem;padding:8px;border:1px solid var(--line);border-radius:6px}
+.hide{display:none!important}
+.dbars td:nth-child(4){width:34%}
+ol.paper{padding-left:1.4em}ol.paper li{margin:0 0 14px;page-break-inside:avoid}
+ol.paper .po{margin:3px 0 0 0}
+@media print{
+ header.top,.noprint{display:none!important}
+ body{background:#fff;font-size:11pt}
+ main{max-width:none;padding:0}
+ .card{border:0;padding:0;margin:0 0 12pt}
+ .ak,.paper li{page-break-inside:avoid}
+ .pb{page-break-before:always}
+}
+</style>
+</head>
+<body>
+<header class="top"><b>AAIR Practice Exam</b><span id="hdrinfo" class="small"></span><span id="timer" class="hide">2:30:00</span></header>
+<main>
+
+<!-- START -->
+<section id="vStart">
+ <div class="card">
+  <h1>ISACA AAIR Practice Exam</h1>
+  <p class="muted">Advanced in AI Risk (AAIR). 90 original four-option items weighted to ISACA's published AAIR Exam Content Outline. Each answer is explained and tied to a published framework, standard or regulation.</p>
+  <div class="notice">AAIR is an <b>ISACA</b> credential, not an ISC2 one. This simulation follows ISACA's exam format.</div>
+  <h3>How the real exam works</h3>
+  <table>
+   <tr><th>Items</th><td>90 multiple-choice questions (ISACA)</td></tr>
+   <tr><th>Time</th><td>150 minutes (2.5 hours)</td></tr>
+   <tr><th>Scoring</th><td>Scaled 200–800; 450 or higher passes</td></tr>
+   <tr><th>Navigation</th><td>Linear (not adaptive); you can flag items, go back and change answers before submitting</td></tr>
+   <tr><th>Delivery</th><td>PSI test centre or remote proctoring; English, Spanish, Chinese</td></tr>
+   <tr><th>Eligibility</th><td>An active qualifying designation such as CRISC, CISA, CISM, CISSP or CGRC</td></tr>
+  </table>
+  <h3>Domain weights (ISACA AAIR Exam Content Outline) → items in this exam</h3>
+  <table id="wtTable"></table>
+ </div>
+
+ <div class="card">
+  <h2>Choose a mode</h2>
+  <div class="row" style="margin-bottom:10px"><label for="cand">Candidate name (optional):</label><input type="text" id="cand" placeholder="e.g., Jason James"></div>
+  <p><b>Exam simulation</b>: 150-minute timer that auto-submits, domains hidden, flag and review allowed, and a review screen before you submit, as on the ISACA exam.</p>
+  <div class="row" style="margin:12px 0 18px"><button class="btn" onclick="startExam('exam')">Start exam simulation</button></div>
+  <p><b>Study mode</b>: untimed, shows the domain, and reveals the correct answer and explanation as soon as you answer.</p>
+  <div class="row" style="margin:12px 0 18px"><button class="btn sec" onclick="startExam('study')">Start study mode</button></div>
+  <p><b>Paper version</b>: all 90 questions, with the answer sheet and explanations at the back. Print or save as PDF.</p>
+  <div class="row"><button class="btn sec" onclick="showPaper()">Open paper version</button><button id="resumeBtn" class="btn sec hide" onclick="resume()">Resume saved attempt</button></div>
+ </div>
+
+ <div class="card small">
+  <h2>About the score</h2>
+  <p>ISACA converts raw scores to a 200–800 scale and does not publish the percentage needed for 450. This file estimates the score with a stated assumption: <b>65% correct ≈ 450</b>, interpolated linearly (0% = 200, 100% = 800). Treat it as a guide only. Aim for <b>75% or more</b> consistently before booking. ISACA exams may also include unscored pretest items, which this file does not simulate.</p>
+  <p><b>ISACA mindset:</b> answer as an AI risk practitioner. Risk owners and management decide; the practitioner identifies, assesses, advises and escalates. Choose the business-aligned, risk-based answer, and watch for FIRST, BEST, MOST and PRIMARY.</p>
+  <h3>Sources for exam facts</h3>
+  <ul>
+   <li>ISACA, AAIR Exam Content Outline (90 questions; domains 37% / 21% / 42%): https://www.isaca.org/credentialing/aair/aair-exam-content-outline</li>
+   <li>ISACA, AAIR certification page (eligible designations, languages, fees): https://www.isaca.org/credentialing/aair</li>
+   <li>ISACA, How to get AAIR certified: https://www.isaca.org/credentialing/aair/get-aair-certified</li>
+   <li>Time (150 minutes) and the 450/800 pass mark are from ISACA's exam candidate guides, as summarised by training providers (e.g., Training Camp, "What is AAIR"). Confirm them in your ISACA candidate guide when you register.</li>
+  </ul>
+  <p>The questions are original and not taken from ISACA's item bank or QAE database.</p>
+ </div>
+</section>
+
+<!-- EXAM -->
+<section id="vExam" class="hide">
+ <div class="card">
+  <div class="row spread small muted"><span id="qnum"></span><span id="qdom"></span></div>
+  <div class="bar" style="margin:8px 0 14px"><i id="prog" style="width:0"></i></div>
+  <div id="stem" class="stem"></div>
+  <div id="opts"></div>
+  <div class="row spread" style="margin-top:16px">
+   <div class="row"><button id="prevBtn" class="btn sec hide" onclick="go(-1)">Previous</button><button id="flagBtn" class="btn sec hide" onclick="toggleFlag()">Flag</button></div>
+   <div class="row"><button id="nextBtn" class="btn" onclick="next()">Next</button><button id="submitBtn" class="btn sec hide" onclick="finish('submitted')">Submit exam</button></div>
+  </div>
+  <div id="fb" class="hide"></div><p id="examHint" class="small muted" style="margin-top:12px"></p>
+ </div>
+ <div id="navCard" class="card hide"><div class="small muted">Question navigator (blue = answered, orange outline = flagged)</div><div id="grid" class="grid"></div></div>
+ <div class="noprint small muted" style="text-align:right"><a href="#" onclick="if(confirm('Abandon this attempt and return to the start screen?')){clearSave();location.reload()}return false">Abandon attempt</a></div>
+</section>
+
+<!-- RESULTS -->
+<section id="vResults" class="hide">
+ <div class="card">
+  <div class="small muted" id="rMeta"></div>
+  <div id="rVerdict" class="verdict"></div>
+  <div id="rScore" style="font-size:1.15rem"></div>
+  <p id="rWhy" class="small muted"></p>
+  <div class="row noprint" style="margin-top:10px">
+   <button class="btn" onclick="window.print()">Print / Save PDF</button>
+   <button class="btn sec" onclick="downloadCSV()">Download results (CSV)</button>
+   <button class="btn sec" onclick="downloadHTMLReport()">Download results page (HTML)</button>
+   <button class="btn sec" onclick="clearSave();location.reload()">New attempt</button>
+  </div>
+ </div>
+ <div class="card">
+  <h2>Performance by domain (weakest first)</h2>
+  <table class="dbars" id="rDomains"></table>
+  <p class="small muted">ISACA score reports include domain-level results for information only; the pass/fail decision is based on the total score.</p>
+ </div>
+ <div class="card">
+  <div class="row spread"><h2 style="margin:0">Answer sheet with explanations</h2>
+   <select id="akFilter" class="noprint" onchange="renderAK()"><option value="all">All items</option><option value="wrong">Incorrect only</option><option value="unseen">Unanswered</option><option value="flag">Flagged</option></select></div>
+  <div id="ak"></div>
+ </div>
+</section>
+
+<!-- PAPER -->
+<section id="vPaper" class="hide">
+ <div class="card noprint"><div class="row"><button class="btn" onclick="window.print()">Print / Save PDF</button><button class="btn sec" onclick="location.reload()">Back</button></div>
+  <p class="small muted">Fixed order and fixed answer letters, so this printout matches its own key. Recommended: 150 minutes. Mark your answers on paper, then score yourself with the key at the back (estimate: 59/90 correct, about 65%, ≈ 450).</p></div>
+ <div class="card"><h1>ISACA AAIR Practice Exam — Paper Version</h1><p class="muted small">90 items · 150 minutes · AAIR Exam Content Outline weighting · Passing estimate: about 59/90 correct (65%) ≈ 450 scaled</p><ol id="paperQ" class="paper"></ol></div>
+ <div class="card pb"><h1>Answer Sheet and Explanations</h1><div id="paperK"></div></div>
+</section>
+</main>
+
+<script>
+const Q=[];
+// Domain 1: AI Risk Governance and Framework Integration (33 items). o[0] is correct; shuffled at runtime.
+Q.push(
+{d:1,q:"Several business units have started deploying AI tools independently. A newly appointed AI risk lead wants to bring these under governance. What should the risk lead do FIRST?",o:["Build an enterprise inventory of AI systems and use cases","Draft detailed technical standards for model development work","Commission a penetration test of the most visible AI tool","Require all business units to pause their AI initiatives"],e:"Risk cannot be governed if it is not known. An inventory of AI systems, owners and use cases is the foundation for classification, assessment and oversight. NIST AI RMF GOVERN 1.6 calls for mechanisms to inventory AI systems. Standards, testing and pauses come later and should be risk-informed.",s:"NIST AI 100-1 (AI RMF 1.0), GOVERN 1.6; ISACA AAIR Exam Content Outline, Domain 1A"},
+{d:1,q:"An organization already operates a mature enterprise risk management (ERM) program. What is the BEST way to manage its emerging AI risks?",o:["Integrate AI risks into the existing ERM taxonomy, register and appetite","Create a separate AI risk register run only by the data science team","Treat AI risk purely as a technology risk handled by the CISO alone","Wait for AI regulations to mature before assessing any AI risks"],e:"ISO/IEC 23894 builds on ISO 31000 and advises integrating AI risk management into existing organizational risk processes, so AI risk is evaluated against the same appetite and visible to the same governance bodies. Siloed registers fragment oversight.",s:"ISO/IEC 23894 (AI - Guidance on risk management); ISACA AAIR Exam Content Outline, Domain 1B"},
+{d:1,q:"A bank uses an AI model to approve consumer loans. Who should be designated as the owner of the risk that the model makes unfair lending decisions?",o:["The business executive accountable for the lending process","The data scientist who developed and trained the model","The chief risk officer, who oversees all risk management","The vendor that supplied the underlying model platform"],e:"Risk ownership sits with the person accountable for the business objective and with the authority to accept or treat the risk: the lending business owner. Developers and vendors own controls or deliverables; the CRO facilitates and challenges as the second line.",s:"ISACA CRISC Review Manual (risk ownership principles); ISO/IEC 42001 Clause 5.3 (roles, responsibilities and authorities)"},
+{d:1,q:"Who is responsible for approving the organization's risk appetite for the use of AI?",o:["The board and senior management","The AI governance working group","The enterprise risk practitioner","The internal audit function"],e:"Risk appetite is a strategic governance decision set by the board and senior leadership. Risk practitioners propose and facilitate; internal audit provides independent assurance; working groups operate within the approved appetite.",s:"ISO 31000; COSO ERM (2017); ISACA AAIR Exam Content Outline, Domain 1C"},
+{d:1,q:"A business unit proposes a customer-facing generative AI assistant. The risk assessment shows that residual risk exceeds the approved risk appetite. What should the risk practitioner do NEXT?",o:["Escalate to the accountable owner and management for a decision","Approve deployment because the business expects significant value","Reject the project outright on behalf of the whole organization","Lower the residual risk rating so that it fits within the appetite"],e:"The risk practitioner advises; accountable management decides. Risk above appetite must be escalated with treatment options so management can treat, avoid or formally accept it. Practitioners should not approve, unilaterally reject or manipulate ratings.",s:"ISACA CRISC Review Manual (risk response and escalation); ISACA AAIR Exam Content Outline, Domain 1A"},
+{d:1,q:"Which NIST AI RMF function is cross-cutting, establishing the culture, policies, accountability and processes that inform the other functions?",o:["Govern","Map","Measure","Manage"],e:"GOVERN is designed to be cross-cutting and infuses throughout the other three functions. MAP establishes context, MEASURE analyzes and tracks risks, and MANAGE prioritizes and acts on them.",s:"NIST AI 100-1 (AI RMF 1.0), Section 5"},
+{d:1,q:"Under the NIST AI RMF, which function is primarily concerned with establishing the context of an AI system and identifying its risks?",o:["Map","Govern","Measure","Manage"],e:"MAP establishes context (intended purpose, settings, stakeholders, impacts) and frames the risks related to an AI system. Its outcomes inform MEASURE and MANAGE.",s:"NIST AI 100-1 (AI RMF 1.0), Section 5.2"},
+{d:1,q:"Which NIST AI RMF function uses quantitative and qualitative tools to analyze, assess, benchmark and monitor AI risk and related impacts?",o:["Measure","Map","Govern","Manage"],e:"MEASURE employs tools, techniques and methodologies to analyze, assess, benchmark and monitor AI risks, including testing for trustworthiness characteristics.",s:"NIST AI 100-1 (AI RMF 1.0), Section 5.3"},
+{d:1,q:"An organization that has adopted ISO 31000 wants guidance specific to managing risks of AI systems that aligns with its existing approach. Which standard is MOST appropriate?",o:["ISO/IEC 23894","ISO/IEC 27001","ISO/IEC 22989","ISO 22301"],e:"ISO/IEC 23894 gives guidance on AI risk management and explicitly adapts the ISO 31000 principles, framework and process. ISO/IEC 22989 defines AI concepts and terminology; 27001 is an ISMS standard; ISO 22301 covers business continuity.",s:"ISO/IEC 23894; ISO 31000"},
+{d:1,q:"Under ISO/IEC 42001, which process requires the organization to assess the potential consequences of an AI system for individuals, groups and societies?",o:["AI system impact assessment","Internal audit of the AI management system","Management review of AI objectives","Statement of applicability review"],e:"ISO/IEC 42001 requires an AI system impact assessment (Clause 6.1.4) that considers consequences for individuals, groups and societies. ISO/IEC 42005 provides further guidance on conducting such assessments.",s:"ISO/IEC 42001, Clause 6.1.4; ISO/IEC 42005"},
+{d:1,q:"A vendor offers an AI system that evaluates people's trustworthiness based on their social behavior, leading to detrimental treatment in unrelated contexts. How is this classified under the EU AI Act?",o:["A prohibited AI practice","A high-risk AI system","A limited-risk system with transparency duties","A minimal-risk system with no obligations"],e:"Article 5 of the EU AI Act prohibits social scoring that leads to detrimental or unfavorable treatment in unrelated social contexts or that is unjustified or disproportionate. Prohibited practices cannot be placed on the EU market.",s:"Regulation (EU) 2024/1689 (EU AI Act), Article 5"},
+{d:1,q:"A multinational plans to use an AI tool to screen and rank job applicants in its EU subsidiaries. How is this use case classified under the EU AI Act?",o:["High-risk, as listed in Annex III (employment)","Prohibited, because it processes personal data","Limited-risk, requiring only a user notice","Out of scope, because it supports human decisions"],e:"Annex III lists AI systems intended for recruitment or selection of persons, including filtering applications and evaluating candidates, as high-risk, triggering requirements such as risk management, data governance, logging and human oversight.",s:"Regulation (EU) 2024/1689 (EU AI Act), Article 6 and Annex III, point 4"},
+{d:1,q:"A company deploys a chatbot that converses directly with members of the public in the EU. Which obligation under the EU AI Act MOST directly applies?",o:["Inform people that they are interacting with an AI system","Obtain a third-party conformity assessment for the chatbot","Register the chatbot in the EU database of prohibited systems","Complete a fundamental rights impact assessment in every case"],e:"Article 50 imposes transparency obligations: AI systems intended to interact directly with natural persons must be designed so people are informed they are interacting with an AI system, unless obvious from context.",s:"Regulation (EU) 2024/1689 (EU AI Act), Article 50"},
+{d:1,q:"An organization purchases a high-risk AI system from a provider and uses it under its own authority. Under the EU AI Act, which obligation applies to the organization as a deployer?",o:["Assign human oversight to competent people with authority","Draw up the technical documentation for the AI system","Perform the conformity assessment and affix the CE marking","Establish and maintain the provider's quality management system"],e:"Article 26 requires deployers to use high-risk systems according to instructions, assign human oversight to competent persons, monitor operation and keep logs under their control. Technical documentation, conformity assessment and QMS are provider obligations.",s:"Regulation (EU) 2024/1689 (EU AI Act), Articles 16 and 26"},
+{d:1,q:"A Canadian company with no EU establishment sells an AI-based service whose output is used by customers in the EU. Which statement is MOST accurate?",o:["The Act may apply because the system's output is used in the EU","The Act cannot apply to any company located outside the EU","Only Canadian law applies because the provider is based in Canada","The Act applies only if the company stores its data in the EU"],e:"Article 2 gives the Act extraterritorial reach: it applies to providers placing AI systems on the EU market and to providers and deployers in third countries where the output produced by the AI system is used in the EU.",s:"Regulation (EU) 2024/1689 (EU AI Act), Article 2"},
+{d:1,q:"An insurer uses a fully automated AI system to deny claims for EU residents with no human involvement. Under the GDPR, which safeguard is MOST relevant?",o:["The right to obtain human intervention and to contest the decision","The right to receive the model's source code on request","The right to have the model retrained on the person's data","The right to choose which algorithm processes the claim"],e:"GDPR Article 22 restricts decisions based solely on automated processing that produce legal or similarly significant effects; where permitted, the controller must implement safeguards including the right to obtain human intervention, express a point of view and contest the decision.",s:"GDPR (EU 2016/679), Article 22"},
+{d:1,q:"A Government of Canada department plans to deploy an automated decision system that will affect benefit eligibility. Under the Treasury Board Directive on Automated Decision-Making, what must be completed to determine the required safeguards?",o:["An Algorithmic Impact Assessment that sets the impact level","A Privacy Impact Assessment for each training dataset","A Threat and Risk Assessment of the hosting platform","A Statement of Sensitivity for the model outputs"],e:"The Directive requires an Algorithmic Impact Assessment (AIA) before production; the resulting impact level (I to IV) determines requirements such as peer review, notice, human involvement and explanation.",s:"Treasury Board of Canada Secretariat, Directive on Automated Decision-Making; Algorithmic Impact Assessment tool"},
+{d:1,q:"A multinational wants to anchor its AI ethics policy on a non-binding, internationally endorsed set of principles that apply across its jurisdictions. Which source is MOST appropriate?",o:["The OECD AI Principles","The EU AI Act Annex III list","ISO/IEC 27002 control set","The MITRE ATLAS matrix"],e:"The OECD AI Principles are intergovernmental, non-binding principles (e.g., human rights and democratic values, transparency, robustness and safety, accountability) adopted by many countries. Annex III is a binding EU high-risk list; 27002 is security controls; ATLAS catalogs adversary techniques.",s:"OECD Recommendation of the Council on Artificial Intelligence (OECD AI Principles, updated 2024)"},
+{d:1,q:"In the NIST AI RMF, which trustworthiness characteristic is described as a necessary condition and shown as the base for the others?",o:["Valid and reliable","Explainable and interpretable","Secure and resilient","Fair with harmful bias managed"],e:"NIST depicts 'valid and reliable' as the base for the other trustworthiness characteristics; if a system is not valid and reliable, other characteristics cannot compensate.",s:"NIST AI 100-1 (AI RMF 1.0), Section 3"},
+{d:1,q:"Applicants rejected by an AI lending model complain that they do not understand why they were declined. Which trustworthiness characteristic MOST directly addresses this concern?",o:["Explainability","Resilience","Reliability","Privacy enhancement"],e:"Explainability is the representation of the mechanisms underlying an AI system's output, helping people understand how a decision was reached. Transparency concerns what information is available about the system; reliability and resilience relate to consistent performance.",s:"NIST AI 100-1 (AI RMF 1.0), Section 3.5"},
+{d:1,q:"Monitoring shows that an AI hiring model has a much lower selection rate for one demographic group. What should the risk practitioner recommend FIRST?",o:["Analyze outcomes by group and review data representativeness","Remove the protected attribute field and redeploy the model","Retire the model and revert permanently to manual screening","Disclose the issue publicly before carrying out any analysis"],e:"Before choosing a treatment, the cause must be understood: disaggregated analysis and review of data representativeness identify where the bias originates. Simply removing a protected attribute often fails because proxies remain.",s:"NIST SP 1270, Towards a Standard for Identifying and Managing Bias in AI; NIST AI 100-1, MEASURE 2.11"},
+{d:1,q:"A model trained on decades of lending records reproduces historical patterns of institutional discrimination. According to NIST SP 1270, which category of bias is this?",o:["Systemic bias","Statistical bias","Human-cognitive bias","Measurement error"],e:"NIST SP 1270 groups AI bias into systemic, statistical/computational and human-cognitive categories. Systemic bias results from procedures and practices of institutions that advantage or disadvantage certain groups, and it can be embedded in historical data.",s:"NIST SP 1270, Section 2"},
+{d:1,q:"An organization is preparing ESG disclosures. Which AI-specific consideration is MOST relevant to the environmental dimension?",o:["Energy and resource use of model training and inference","The number of employees trained in prompt engineering","Model licensing costs paid to third-party AI providers","The volume of customer complaints about the chatbots"],e:"Training and operating large AI models can consume significant energy and water, which is directly relevant to environmental reporting. The other items relate to workforce, cost or customer service.",s:"NIST AI 600-1 (Generative AI Profile), Environmental Impacts risk; ISACA AAIR Exam Content Outline, Domain 1F"},
+{d:1,q:"Which provision is MOST important to include in an acceptable use policy for public generative AI tools?",o:["Prohibit entering confidential or personal data into unapproved tools","Require all prompts to be written in formal business language","Limit employees to a fixed number of prompts per day","Require employees to use their personal accounts only"],e:"The primary risk of public GenAI tools is leakage of confidential or personal data through prompts that the provider may retain or use. Policies should define approved tools and prohibited data types.",s:"NIST AI 600-1 (Data Privacy and Information Security risks); OWASP Top 10 for LLM Applications 2025, LLM02"},
+{d:1,q:"A survey finds widespread use of unsanctioned generative AI tools (shadow AI). What is the BEST response?",o:["Offer approved tools with guardrails, plus policy and training","Block every AI website at the firewall and take no other action","Ignore the usage because it is clearly improving productivity","Take disciplinary action against every employee who used a tool"],e:"Blanket blocking drives usage to personal devices and ignores business demand. A balanced response offers sanctioned alternatives with controls, sets clear policy and builds awareness, while monitoring for continued unsanctioned use.",s:"ISACA AAIR Exam Content Outline, Domain 1D (policies, procedures and training)"},
+{d:1,q:"Which approach to AI risk training is MOST effective across an enterprise?",o:["Role-based training tailored to each group's AI responsibilities","A single generic e-learning module completed by all staff","Annual reading of the AI policy with a signed attestation","Specialist training delivered only to the data science team"],e:"Different roles face different AI risks and decisions; role-based training makes content relevant and actionable. Generic modules and attestations alone build little capability.",s:"ISO/IEC 42001, Clause 7.2 (competence) and 7.3 (awareness); ISACA AAIR Exam Content Outline, Domain 1D"},
+{d:1,q:"What information is MOST useful to provide to the board for oversight of AI risk?",o:["The aggregated AI risk profile and trends against appetite","A list of every AI model with its technical hyperparameters","Detailed logs of all prompts submitted to the AI tools","The data science team's sprint backlog and delivery velocity"],e:"Boards need concise, decision-useful information: the overall AI risk profile, significant risks, trends and positions relative to appetite and tolerance. Technical detail belongs at the management and operational levels.",s:"ISACA CRISC Review Manual (risk reporting); NIST AI 100-1, GOVERN 1.5 and MANAGE 4"},
+{d:1,q:"Under the Three Lines Model, which function provides independent and objective assurance to the board on the effectiveness of AI governance and risk management?",o:["Internal audit","The AI risk management function","The AI product owners","The model development team"],e:"Internal audit is the third line, providing independent assurance. Risk management is the second line (expertise, monitoring, challenge); business and development teams are the first line that owns and manages risk.",s:"The IIA's Three Lines Model (2020)"},
+{d:1,q:"An organization is forming an AI governance committee. Which composition is MOST appropriate?",o:["Cross-functional members from business, risk, legal and tech","Data scientists only, because they understand the technology","IT operations staff only, because they run the AI platforms","External consultants only, to ensure complete independence"],e:"AI risk spans legal, ethical, privacy, security, operational and business dimensions, so oversight bodies should be multidisciplinary with clear authority. Single-discipline committees miss significant risks.",s:"NIST AI 100-1, GOVERN 2 and GOVERN 3 (diverse teams); ISO/IEC 42001 Clause 5"},
+{d:1,q:"A new AI regulation is published in a jurisdiction where the company operates. What should the risk practitioner do FIRST?",o:["Assess applicability and gaps against the AI inventory and controls","Immediately suspend all AI systems used in that jurisdiction","Update the AI policy to quote the full text of the regulation","Wait for the first enforcement action before taking any steps"],e:"The first step is determining whether and how the regulation applies, by mapping its requirements to the AI inventory and existing controls to identify gaps. Treatment follows the analysis.",s:"ISACA AAIR Exam Content Outline, Domain 1E (regulatory compliance and legal considerations)"},
+{d:1,q:"The marketing team wants to publish images and copy created with a generative AI service. Which legal risk should the risk practitioner highlight MOST?",o:["IP infringement and uncertain ownership of the outputs","Higher electricity costs from image generation in the cloud","Lower search engine rankings for AI-generated web content","Breach of the company's internal brand and style guide"],e:"Generative outputs may reproduce protected material and their ownership or protectability may be uncertain. Mitigations include human review, provider terms on IP and indemnification, and usage guidelines.",s:"NIST AI 600-1 (Intellectual Property risk); ISACA AAIR Exam Content Outline, Domains 1E and 3E"},
+{d:1,q:"Reviewers in a claims process approve 99.8% of AI recommendations without changes, spending an average of five seconds per case. What is the PRIMARY risk this indicates?",o:["Automation bias is making human oversight ineffective","The AI model has been fully validated and is accurate","The reviewers need faster workstations and screens","The AI system is exposed to data poisoning attacks"],e:"Near-total agreement with minimal review time suggests reviewers are deferring to the system (automation bias), so oversight provides little real control. The EU AI Act requires human oversight measures to make people aware of automation bias.",s:"Regulation (EU) 2024/1689, Article 14(4)(b); NIST AI 100-1 (human-AI configuration)"}
+);
+
+// Domain 1 (1 more item) and Domain 2: AI Life Cycle Risk Management (19 items)
+Q.push(
+{d:1,q:"Management has a long list of proposed AI initiatives and limited budget. On what basis should the initiatives PRIMARILY be prioritized?",o:["Alignment with business objectives and value relative to risk","The technical novelty of the AI techniques that are involved","The number of vendors competing to supply each AI solution","How quickly each initiative can be deployed into production"],e:"AI strategy should be driven by business objectives, with value weighed against risk and the organization's appetite. Novelty, vendor interest and speed are secondary considerations.",s:"COBIT 2019 (alignment of I&T with enterprise goals); ISACA AAIR Exam Content Outline, Domain 1A-1B"},
+
+{d:2,q:"At what point in the AI life cycle should AI-specific risks FIRST be identified?",o:["During problem definition and design, before development begins","During user acceptance testing of the completed model","Immediately after the model is deployed into production","During the first scheduled post-implementation review"],e:"Identifying risks at inception (purpose, context, impacted parties, data needs) allows them to shape design decisions and impact assessments, which is far cheaper than retrofitting controls.",s:"ISO/IEC 5338 (AI system life cycle processes); NIST AI 100-1, MAP 1"},
+{d:2,q:"An organization is procuring a third-party AI model for a customer-facing decision process. Which documentation from the vendor is MOST important to obtain?",o:["Intended use, limitations, data provenance and evaluation results","The vendor's marketing brochure and its customer reference list","The vendor's organizational chart and its regional office locations","The programming languages and libraries used to build the model"],e:"Model documentation (such as a model card) describing intended use, known limitations, data sources and performance evaluations lets the buyer judge fitness for its use case and residual risk. The other items do not inform AI risk.",s:"NIST AI 100-1, MAP 4 and GOVERN 6; EU AI Act Article 13 (instructions for use)"},
+{d:2,q:"When evaluating a vendor AI solution, what should the risk practitioner confirm FIRST?",o:["Whether its intended use and performance fit our use case","Whether the vendor offers the lowest price of all bidders","Whether the vendor's user interface is easy to navigate","Whether the vendor holds the largest share of the market"],e:"A model used outside its intended purpose or performance envelope introduces risk regardless of vendor quality. Fitness for purpose is the first gate; cost and usability come later.",s:"NIST AI 100-1, MAP 2 and MAP 3; ISACA AAIR Exam Content Outline, Domain 2A"},
+{d:2,q:"A model achieved 99% accuracy in testing but performs poorly in production. Investigators find that many test records also appeared in the training data. What is the MOST likely cause?",o:["Data leakage between training and test sets inflated performance","Concept drift caused by a recent change in customer behavior","An evasion attack carried out against the production model","Insufficient compute resources allocated in production"],e:"When test data overlaps training data, the evaluation no longer measures generalization, producing over-optimistic results. Test sets must be independent and held out.",s:"ISO/IEC 22989 (training, validation and test data concepts); NIST AI 100-1, MEASURE 2"},
+{d:2,q:"A model performs extremely well on its training data but poorly on new, unseen data. What does this indicate?",o:["Overfitting to the specifics of the training data","Underfitting because the model is far too simple","Concept drift occurring in the production environment","Successful generalization to the target population"],e:"Overfitting occurs when a model learns patterns, including noise, specific to the training data and fails to generalize. Underfitting would show poor performance on both training and new data.",s:"ISO/IEC 22989 (machine learning concepts)"},
+{d:2,q:"Who should perform validation of a high-impact AI model before it is approved for production use?",o:["A qualified party independent of the model's development team","The data scientists who designed and trained the model","The business users who requested the model's features","The vendor's sales engineer who demonstrated the model"],e:"Model risk management guidance calls for independent validation and 'effective challenge' by competent staff with incentives separate from development. Developers testing their own work lack independence.",s:"Federal Reserve/OCC SR 11-7, Supervisory Guidance on Model Risk Management"},
+{d:2,q:"A fraud detection model's accuracy declines because fraudsters have changed tactics, even though the input data looks statistically similar. What type of drift is this?",o:["Concept drift","Data (covariate) drift","Label noise","Feature leakage"],e:"Concept drift is a change in the relationship between inputs and the target. Data or covariate drift is a change in the distribution of inputs. Here the inputs look similar but their meaning for fraud has changed.",s:"ISO/IEC 22989; NIST AI 100-1, MEASURE 2.4 (monitoring in production)"},
+{d:2,q:"Which monitoring approach BEST detects data drift in a production AI model?",o:["Compare production input distributions with the training baseline","Review the model's source code every month for unexpected changes","Count the number of users who log in to the application each day","Confirm that the hosting servers have received all security patches"],e:"Data drift is detected by statistically comparing the distributions of incoming features with those observed at training and validation time, with thresholds that trigger review or retraining.",s:"NIST AI 100-1, MEASURE 2.4 and MANAGE 4.1; ISACA AAIR Exam Content Outline, Domain 2C"},
+{d:2,q:"Before releasing a generative AI assistant to customers, what is the PRIMARY objective of red-teaming it?",o:["Find harmful outputs, jailbreaks and misuse paths","Measure response latency under normal user load","Confirm the interface meets accessibility guidelines","Verify that the training budget was not exceeded"],e:"AI red-teaming uses adversarial techniques to discover failure modes such as harmful content, jailbreaks, data leakage and misuse before deployment, informing mitigations.",s:"NIST AI 600-1 (Generative AI Profile), MEASURE actions on red-teaming"},
+{d:2,q:"A generative AI legal research tool produced convincing but non-existent case citations. Which control combination BEST reduces this risk?",o:["Ground answers in verified sources and require human verification","Increase the model's temperature to diversify its answers","Shorten prompts so the model has less context to process","Train users to trust outputs that include citations"],e:"NIST calls this risk confabulation. Retrieval grounding against authoritative sources plus mandatory human verification of citations reduces both the likelihood and impact. Raising temperature increases variability.",s:"NIST AI 600-1 (Confabulation risk)"},
+{d:2,q:"A team retrains a production credit model on newly collected data. How should this be handled?",o:["As a change requiring re-validation and approval before release","As routine maintenance needing no review if accuracy improves","As a decommissioning event for the previous model only","As an incident requiring notification of regulators"],e:"Retraining can change model behavior, fairness and risk profile. It should go through change management, including validation against acceptance criteria and approval, with the ability to roll back.",s:"SR 11-7 (model changes); ISACA AAIR Exam Content Outline, Domain 2C and outline task on change management"},
+{d:2,q:"An AI model that supports several business processes is being retired. What is MOST important to address?",o:["Identify and transition dependent processes and downstream systems","Delete the model files immediately to reduce storage costs","Announce the retirement in the company newsletter","Archive only the source code and discard the documentation"],e:"Decommissioning risk centers on unexpected disruption: processes or systems that consume the model's outputs must be identified and transitioned, and data, logs and documentation handled per retention requirements.",s:"ISO/IEC 5338 (retirement stage); ISACA AAIR Exam Content Outline, Domain 2C"},
+{d:2,q:"What is the PRIMARY risk management benefit of maintaining data lineage for AI training data?",o:["Traceability of data sources and transformations","Faster model training on graphics processing units","Lower storage costs for historical training datasets","Automatic improvement in the model's overall accuracy"],e:"Lineage records where data came from and how it was transformed, supporting investigation of errors or poisoning, licensing and consent checks, and regulatory accountability.",s:"EU AI Act Article 10 (data governance); NIST AI 100-1, MAP 4"},
+{d:2,q:"A customer churn model was trained on data that contains very few rural customers. Which data quality issue does this represent?",o:["Representativeness","Timeliness","Integrity","Availability"],e:"Training data that does not reflect the population on which the model will be used is unrepresentative, which can produce poor or biased performance for underrepresented groups. The EU AI Act requires training data to be relevant and sufficiently representative.",s:"EU AI Act Article 10(3); ISO/IEC 5259 series (data quality for analytics and ML)"},
+{d:2,q:"Which records should an AI asset inventory contain to support risk management?",o:["Models and versions, datasets, owners, intended uses and risk ratings","Only the names of AI vendors and their contract renewal dates","Only the hardware on which AI workloads are currently running","Only models that have previously caused a reported incident"],e:"A useful AI inventory links each model version to its data, owner, purpose, dependencies and risk classification, enabling oversight, impact analysis and incident response.",s:"NIST AI 100-1, GOVERN 1.6; ISO/IEC 42001 Annex A (resources for AI systems)"},
+{d:2,q:"Before fully relying on a new AI underwriting model, the organization runs it alongside the existing process and compares results without acting on the AI's outputs. What is this approach called?",o:["Shadow (parallel) deployment","Blue/green cutover","Canary release to all users","Big-bang implementation"],e:"In shadow or parallel mode the AI makes decisions that are recorded but not acted on, so its performance and impacts can be compared with the current process before go-live.",s:"ISACA AAIR Exam Content Outline, Domain 2C (implementation); SR 11-7 (ongoing monitoring and outcomes analysis)"},
+{d:2,q:"An auditor asks the team to reproduce exactly the model version that made a disputed decision last year. What practice makes this possible?",o:["Versioning code, training data, parameters and model artifacts together","Keeping only the latest version of the trained model in production","Documenting the model's purpose in a short narrative summary","Storing the model's predictions without any input records"],e:"Reproducibility requires versioned code, data snapshots, configuration and hyperparameters, and model artifacts linked to each release, together with decision logs.",s:"EU AI Act Article 12 (record-keeping); ISO/IEC 5338 (configuration management)"},
+{d:2,q:"A team stores curated training datasets in a shared bucket that many engineers can write to. Which control BEST reduces the risk of training data being poisoned?",o:["Restrict write access and verify dataset integrity before each run","Increase the size of the dataset so bad records have less effect","Train the model more often so errors are corrected faster","Publish the dataset openly so others can review it"],e:"Data poisoning requires the ability to alter training data. Least-privilege write access, change logging and integrity verification (e.g., hashes or signed dataset versions) before training reduce both likelihood and undetected impact.",s:"NIST AI 100-2 (poisoning mitigations); OWASP Top 10 for LLM Applications 2025: LLM04 Data and Model Poisoning"},
+{d:2,q:"Which international standard defines the processes of the AI system life cycle, building on software and systems engineering life cycle standards?",o:["ISO/IEC 5338","ISO/IEC 42001","ISO/IEC 23894","ISO/IEC 27005"],e:"ISO/IEC 5338 defines AI system life cycle processes based on ISO/IEC/IEEE 15288 and 12207. ISO/IEC 42001 is a management-system standard; 23894 covers AI risk management; 27005 covers information security risk.",s:"ISO/IEC 5338"}
+);
+
+// Domain 3: AI Risk Program Management (38 items)
+Q.push(
+{d:3,q:"When developing AI risk scenarios for management, which element is MOST important to include?",o:["The impact on business objectives if the scenario occurs","The specific machine learning algorithm used by the model","The names of the developers who built the AI system","The cloud region where the model is currently hosted"],e:"Risk scenarios must be expressed in business terms (threat or event, asset, and impact on objectives) so decision-makers can prioritize and treat them. Technical details support analysis but do not drive decisions.",s:"ISACA CRISC Review Manual (risk scenario development); ISACA AAIR Exam Content Outline, Domain 3A"},
+{d:3,q:"Researchers place small, carefully designed stickers on road signs so that a vision model misclassifies them at inference time. What type of attack is this?",o:["Evasion attack","Data poisoning attack","Model extraction attack","Membership inference attack"],e:"Evasion attacks manipulate inputs at deployment time to cause misclassification without changing the model. Poisoning corrupts training; extraction replicates the model; membership inference reveals training data membership.",s:"NIST AI 100-2 (Adversarial Machine Learning: Taxonomy and Terminology)"},
+{d:3,q:"An attacker sends large volumes of systematically varied queries to a proprietary model's API in order to train a functionally equivalent copy. Which control BEST reduces this risk?",o:["Rate limiting and monitoring API usage for anomalous query patterns","Encrypting the model's weights at rest in object storage","Adding more training data to improve the model's accuracy","Publishing the model card with detailed architecture notes"],e:"This is model extraction (stealing). Limiting query rates, monitoring for extraction-like patterns and restricting output detail reduce feasibility. Encryption at rest does not protect against API-based extraction.",s:"NIST AI 100-2 (model extraction); MITRE ATLAS"},
+{d:3,q:"A retrieval-augmented generation (RAG) assistant reads documents from a shared repository. An attacker plants hidden instructions in one document that the assistant then follows. Which control is MOST effective?",o:["Treat retrieved content as untrusted and limit model actions","Increase the number of documents retrieved for each query","Allow only senior staff to submit questions to the assistant","Store the document repository on encrypted storage volumes"],e:"This is indirect prompt injection. Because it cannot be fully prevented, the key mitigations are segregating untrusted content, constraining model privileges and tool access, and validating outputs before actions.",s:"OWASP Top 10 for LLM Applications 2025: LLM01 Prompt Injection"},
+{d:3,q:"An AI agent can read email, send payments and modify vendor records with a single broad service account. Which risk does this MOST directly create?",o:["Excessive agency, with manipulated output driving actions","Confabulation, where the agent invents facts in its replies","Data drift, where inputs diverge from the training data","Model inversion, where training records are reconstructed"],e:"OWASP describes excessive agency as damaging actions taken in response to unexpected or manipulated model outputs, caused by excessive functionality, permissions or autonomy. Mitigations include least privilege and human approval of high-impact actions.",s:"OWASP Top 10 for LLM Applications 2025: LLM06 Excessive Agency"},
+{d:3,q:"A chatbot fine-tuned on support tickets reveals customers' account details in its responses. Which control would have BEST prevented this?",o:["Sanitizing personal data out of the training set before tuning","Increasing the model's maximum permitted response length","Hosting the chatbot in a private and dedicated cloud region","Requiring users to accept updated terms of service at login"],e:"Sensitive information disclosure is best addressed by keeping sensitive data out of training data (sanitization, minimization), supplemented by output filtering and access controls.",s:"OWASP Top 10 for LLM Applications 2025: LLM02 Sensitive Information Disclosure"},
+{d:3,q:"A threat intelligence team wants a knowledge base of real-world adversary tactics and techniques targeting AI and machine learning systems. Which resource is MOST appropriate?",o:["MITRE ATLAS","NIST SP 800-53","COBIT 2019","ISO/IEC 42001"],e:"MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems) catalogs adversary tactics, techniques and case studies against AI systems, modeled on ATT&CK. The others are control or governance frameworks.",s:"MITRE ATLAS (atlas.mitre.org)"},
+{d:3,q:"A risk practitioner rates the risk of a new AI model before considering any existing or planned controls. What is being assessed?",o:["Inherent risk","Residual risk","Risk tolerance","Control risk"],e:"Inherent risk is the level of risk before controls are applied. Residual risk remains after controls; tolerance is the acceptable variation; control risk is the risk that controls fail.",s:"ISACA CRISC Review Manual (inherent and residual risk); ISO 31000"},
+{d:3,q:"An organization has little historical loss data about a new type of generative AI risk. Which assessment approach is MOST appropriate?",o:["Scenario-based qualitative analysis with expert input","A fully quantitative model built on years of loss history","Postponing assessment until actual losses are observed","Adopting the risk ratings published by a competitor"],e:"When data is scarce, structured scenario analysis using expert judgment, threat intelligence and test results produces defensible ratings. Waiting for losses or copying others' ratings is inappropriate.",s:"ISO/IEC 31010 (risk assessment techniques); ISACA CRISC Review Manual"},
+{d:3,q:"To estimate the likelihood of a novel AI attack against its systems, which source of information is MOST useful?",o:["Threat intelligence, red-team results and expert judgment","The model's accuracy score on the original test set","The number of employees who use the AI system daily","The total budget allocated to the AI project"],e:"Likelihood depends on threat capability and intent and on exploitable weaknesses, which are informed by threat intelligence (e.g., MITRE ATLAS case studies), adversarial testing and expert judgment.",s:"NIST AI 100-1, MEASURE 1 and MAP 5; MITRE ATLAS"},
+{d:3,q:"After assessment, management decides to cancel a planned AI feature because its risks cannot be reduced to an acceptable level cost-effectively. Which risk response is this?",o:["Risk avoidance","Risk transfer","Risk mitigation","Risk acceptance"],e:"Avoidance eliminates the risk by not performing the activity. Transfer shifts impact to a third party, mitigation reduces likelihood or impact, and acceptance retains the risk knowingly.",s:"ISACA CRISC Review Manual (risk response options); ISO 31000"},
+{d:3,q:"An organization purchases insurance covering liability from harm caused by its AI systems. Which risk response is this?",o:["Risk transfer","Risk avoidance","Risk mitigation","Risk acceptance"],e:"Insurance shares or transfers the financial impact with a third party. The organization still retains accountability and reputational impact.",s:"ISACA CRISC Review Manual; ISO 31000 (risk sharing)"},
+{d:3,q:"A business owner wants to accept the residual risk of a customer-facing AI model. What is MOST important for the acceptance to be valid?",o:["Documented approval by someone with authority for that risk level","Agreement from the data science team that the model is accurate","Confirmation that competitors already use similar AI models","A verbal agreement reached during the project steering meeting"],e:"Risk acceptance must be made by a person with appropriate authority for the risk level, be consistent with appetite and be formally documented for monitoring and review.",s:"ISACA CRISC Review Manual (risk acceptance); NIST AI 100-1, MANAGE 1.4"},
+{d:3,q:"Several treatment options exist for a high-rated AI risk. On what basis should the response PRIMARILY be selected?",o:["Cost-benefit relative to risk appetite and tolerance","The option requiring the least effort from the IT team","The option preferred by the AI vendor's account manager","The option that eliminates every possible residual risk"],e:"Risk responses are chosen to bring risk within appetite and tolerance at a cost proportionate to the benefit. Eliminating all risk is rarely possible or economical.",s:"ISACA CRISC Review Manual (risk response selection); ISO 31000"},
+{d:3,q:"On what should thresholds for AI key risk indicators (KRIs) PRIMARILY be based?",o:["The organization's risk tolerance levels","Industry average values published by vendors","The data science team's performance targets","The historical maximum value of each metric"],e:"KRI thresholds signal when risk is approaching or exceeding acceptable variation, so they should be derived from risk tolerance, which operationalizes appetite.",s:"ISACA CRISC Review Manual (KRI thresholds); ISACA AAIR Exam Content Outline, Domain 3D"},
+{d:3,q:"An operations team compares a production model's weekly accuracy against approved thresholds and raises alerts on breaches. What type of control is this?",o:["Detective","Preventive","Corrective","Deterrent"],e:"Monitoring against thresholds identifies problems after they occur, so it is detective. Preventive controls stop events; corrective controls restore; deterrent controls discourage.",s:"ISACA CRISC Review Manual (control types)"},
+{d:3,q:"What is the BEST evidence that a generative AI content filter is operating effectively?",o:["Independent test results showing prohibited content is blocked","The vendor's statement that the filter uses advanced techniques","A low number of complaints received from users last month","The configuration file showing that the filter is switched on"],e:"Effectiveness is demonstrated by testing outcomes against defined criteria, ideally performed independently. Vendor claims, configuration status and low complaint volumes do not prove the control works.",s:"ISACA AAIR Exam Content Outline, Domain 3C (control validation); NIST AI 600-1 (MEASURE)"},
+{d:3,q:"A vendor's AI model is a black box that cannot be explained or inspected. What is the MOST appropriate compensating control for a high-impact use?",o:["Enhanced monitoring of outputs and human review of high-impact decisions","Relying on the vendor's contractual warranty of accuracy","Requiring users to sign an acknowledgment of the AI's limitations","Increasing the frequency of vendor sales meetings"],e:"Where internal controls such as explainability or inspection are unavailable, compensating controls focus on outcomes: monitoring, outcome testing and human oversight of consequential decisions.",s:"NIST AI 100-1, MANAGE 2 and GOVERN 6; ISACA AAIR Exam Content Outline, Domain 3C"},
+{d:3,q:"In an AI risk program, who is responsible for ensuring a specific control, such as weekly bias testing, is performed as designed?",o:["The control owner","The risk owner","The board of directors","The external auditor"],e:"Control owners are responsible for the design and operation of assigned controls. Risk owners are accountable for the risk and its response; boards oversee; external auditors provide independent assurance.",s:"ISACA CRISC Review Manual (control ownership)"},
+{d:3,q:"Which control is MOST appropriate to prevent harmful outcomes from an AI system that makes high-impact decisions about individuals?",o:["Human review and approval before decisions take effect","Quarterly reporting of the number of decisions made","Annual retraining of the model on new data","Archiving decision logs for seven years"],e:"Human-in-the-loop approval at critical decision points prevents erroneous or unfair decisions from taking effect. The other options are detective, maintenance or record-keeping activities.",s:"EU AI Act Article 14 (human oversight); ISACA AAIR Exam Content Outline task on human oversight"},
+{d:3,q:"Which is the BEST key risk indicator for the risk that a fraud detection model degrades in production?",o:["Trend in precision and recall against the validated baseline","Number of fraud analysts employed by the organization","Total compute cost of running the model each month","Number of new features added to the model this year"],e:"A KRI should provide early warning of increasing risk. Declining precision or recall relative to the validated baseline directly signals degradation. The others are cost, staffing or activity measures.",s:"ISACA CRISC Review Manual (KRIs); NIST AI 100-1, MEASURE 2.4"},
+{d:3,q:"Which metric is a key risk indicator rather than a key performance indicator?",o:["Share of production AI models overdue for revalidation","Number of AI use cases delivered during this quarter","Average time saved per employee who uses AI tools","Revenue generated this year by AI-enabled products"],e:"KRIs indicate exposure to risk; overdue revalidation signals growing model risk. The other metrics measure delivery, productivity or financial performance (KPIs).",s:"ISACA CRISC Review Manual (KRIs vs KPIs)"},
+{d:3,q:"What is MOST important when reporting AI risk to senior management?",o:["Trends and exceptions against tolerance, in business terms","Every technical metric collected from each production model","The same detailed technical report prepared for engineers","Only those risks that have already caused financial losses"],e:"Effective risk reporting is concise and decision-oriented: key risks, trends and breaches of tolerance expressed in business impact terms. Excessive technical detail obscures what needs action.",s:"ISACA CRISC Review Manual (risk reporting); NIST AI 100-1, GOVERN 1.5"},
+{d:3,q:"Which of the following is the BEST leading indicator of AI-related risk?",o:["Rising number of unapproved AI tools detected in use","Number of AI incidents that occurred last quarter","Total losses from AI incidents in the previous year","Number of regulatory fines paid for misuse of AI"],e:"Leading indicators signal increasing exposure before losses occur; growth in shadow AI suggests uncontrolled use. Incident counts, losses and fines are lagging indicators.",s:"ISACA CRISC Review Manual (leading and lagging indicators)"},
+{d:3,q:"How can the risk function BEST keep track of emerging AI risks?",o:["Ongoing horizon scanning of threats, regulation and incidents","Reviewing the AI risk register once every three years","Waiting for internal audit to report new AI-related findings","Relying on each vendor to disclose any newly identified risks"],e:"The AI threat and regulatory landscape changes rapidly, so ongoing horizon scanning (threat intelligence, regulatory developments, public incident databases) feeds updates to scenarios and the register.",s:"NIST AI 100-1, GOVERN 1.5 and MEASURE 3.1; ISACA AAIR Exam Content Outline, Domain 3D"},
+{d:3,q:"During due diligence on a third-party generative AI provider, which question is MOST important to ask?",o:["Will our prompts and data be used to train its models?","How many marketing awards has the provider won this year?","Which programming language is the provider's API written in?","How many employees work in the provider's head office?"],e:"Use, retention and protection of customer data are central AI supply chain risks, affecting confidentiality, privacy and IP. The other questions do not address risk.",s:"ISACA AAIR Exam Content Outline, Domain 3E and task on contracts (data use, IP); NIST AI 600-1"},
+{d:3,q:"Which contract clause BEST protects confidential data submitted to a third-party AI service?",o:["A ban on using customer data to train the provider's models","A requirement that the provider always uses its newest model","A discount granted to the customer for any late payments","A right for the provider to change terms without any notice"],e:"Explicit data-use restrictions (no training on customer data, defined retention and deletion) protect confidentiality and IP. The other clauses do not address data protection.",s:"ISACA AAIR Exam Content Outline task on AI contracts (data use, intellectual property)"},
+{d:3,q:"A SaaS vendor's HR product relies on a foundation model supplied by another company. What should the risk practitioner do?",o:["Identify the nth-party model dependency and assess its risks","Ignore it, because the contract is only with the SaaS vendor","Require the SaaS vendor to stop using all AI immediately","Contract directly with the foundation model provider instead"],e:"Fourth-party (nth-party) dependencies carry risks such as data flows, outages and behavior changes. They should be identified and assessed through the primary vendor, with contractual flow-down requirements.",s:"NIST AI 100-1, GOVERN 6.1; ISACA AAIR Exam Content Outline, Domain 3E"},
+{d:3,q:"Developers want to download a pre-trained model from a public model hub. Which control BEST addresses supply chain risk?",o:["Verify provenance and scan model files before use","Choose the model with the most downloads on the hub","Fine-tune the model first, then check where it came from","Run the model only on individual developer laptops"],e:"Public models can contain backdoors or malicious serialized code. Verifying source and integrity, scanning artifacts and using safe serialization formats reduce supply chain risk.",s:"OWASP Top 10 for LLM Applications 2025: LLM03 Supply Chain"},
+{d:3,q:"An organization wants a machine-readable inventory of the models, datasets and software components that make up its AI systems. Which artifact serves this purpose?",o:["An ML bill of materials (ML-BOM)","A signed risk acceptance memo","A business impact analysis report","A RACI chart for the AI roles"],e:"An ML-BOM extends the software bill of materials concept to models, datasets and their dependencies, supporting supply chain transparency and vulnerability response. CycloneDX supports ML-BOMs.",s:"OWASP CycloneDX specification (Machine Learning Bill of Materials)"},
+{d:3,q:"A third-party provider silently updated its model, changing outputs used in the organization's decisions. Which contractual control would BEST have reduced this risk?",o:["Advance notice of model changes and a right to test them","A longer contract term with automatic annual renewal","A clause requiring the provider to use renewable energy","A larger service credit when the service is unavailable"],e:"Change notification and version pinning or testing rights allow the customer to evaluate behavior changes before they affect decisions. Uptime credits and contract length do not address model behavior changes.",s:"NIST AI 100-1, GOVERN 6.1 and MANAGE 3; ISACA AAIR Exam Content Outline, Domain 3E"},
+{d:3,q:"A public-facing chatbot begins giving customers dangerous advice and the issue is spreading on social media. What should be done FIRST?",o:["Contain it by disabling or restricting the chatbot","Retrain the model with additional safety data first","Complete a full root cause analysis before acting","Issue a press release that blames the model vendor"],e:"Containment comes first to stop ongoing harm, for example a kill switch or rollback to a safe version, following the incident response plan. Root cause analysis and retraining follow.",s:"NIST SP 800-61 (incident response); NIST AI 100-1, MANAGE 2.4 (mechanisms to supersede, disengage or deactivate AI systems)"},
+{d:3,q:"What is the MOST important enhancement when adapting an existing incident response plan for AI systems?",o:["AI-specific playbooks, such as model rollback or deactivation","Replacing the security operations team with an AI team","Removing escalation steps so that responses are faster","Limiting the scope of the plan to cyberattacks only"],e:"AI incidents include harmful outputs, bias, drift and adversarial attacks, not only security breaches. Playbooks should cover deactivation or rollback, impact assessment of past outputs and stakeholder notification.",s:"NIST AI 100-1, MANAGE 4.3; ISACA AAIR Exam Content Outline, Domain 3F"},
+{d:3,q:"A claims process now depends on an AI triage model. What should the business impact analysis determine for this dependency?",o:["The impact over time of AI unavailability and the manual fallback","The accuracy of the model measured on the original training data","The number of data scientists needed to support the model","The licensing cost of replacing the model with another vendor"],e:"A BIA identifies the impact of disruption over time and maximum tolerable downtime, informing recovery objectives and fallback procedures, such as manual triage, if the AI fails or must be disabled.",s:"ISO 22301; NIST SP 800-34; ISACA AAIR Exam Content Outline, Domain 3F"},
+{d:3,q:"Which capability is MOST important in disaster recovery planning for a critical AI service?",o:["Rolling back to a last known good model version","Backing up only the most recent training dataset","Rebuilding the model from scratch after each outage","Relying on the vendor to remember the configuration"],e:"Recovery requires versioned, backed-up model artifacts, configurations and dependencies so that a validated version can be restored quickly. Rebuilding from scratch is slow and may not reproduce validated behavior.",s:"NIST SP 800-34; ISACA AAIR Exam Content Outline, Domain 3F"},
+{d:3,q:"After an AI incident is resolved, what should the risk practitioner ensure happens?",o:["Lessons learned update the risk register, scenarios and controls","The incident record is closed and archived without review","The model is permanently banned from all future use","The incident details are withheld from management"],e:"Post-incident review identifies root causes and feeds improvements into risk scenarios, ratings, controls and monitoring, closing the risk management loop.",s:"NIST SP 800-61 (post-incident activity); NIST AI 100-1, MANAGE 4"},
+{d:3,q:"The risk team wants to use a generative AI tool to draft risk assessments and summarize control test results. Which control is MOST important?",o:["Human review with retained accountability, using an approved tool","Allowing the tool to approve risk acceptances automatically","Using any free public AI tool to reduce cost","Removing the risk team's sign-off to save time"],e:"Using AI within the risk program introduces its own risks (confabulation, data leakage). Outputs must be reviewed by accountable professionals, and only approved tools with appropriate data handling should be used.",s:"ISACA AAIR Exam Content Outline task: leverage AI in the risk management program; NIST AI 600-1"},
+{d:3,q:"Under the EU AI Act, which party must report serious incidents involving a high-risk AI system to market surveillance authorities?",o:["The provider of the high-risk AI system","The individual affected by the incident","The cloud provider hosting the system","The notified body that certified the system"],e:"Article 73 requires providers of high-risk AI systems placed on the EU market to report serious incidents to the market surveillance authorities. Deployers who identify a serious incident must inform the provider.",s:"Regulation (EU) 2024/1689 (EU AI Act), Articles 26(5) and 73"}
+);
+
+const DOM={1:"AI Risk Governance and Framework Integration",2:"AI Life Cycle Risk Management",3:"AI Risk Program Management"};
+const WT={1:37,2:21,3:42};
+const TIME=150*60,KEY="aair-practice-2026-v1";
+const L=["A","B","C","D"];
+function scaledOf(p){return Math.round(p<=0.65?200+p/0.65*250:450+(p-0.65)/0.35*350)}
+let S=null,tick=null;
+
+function rng(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function shuffle(a,r){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function $(id){return document.getElementById(id)}
+function show(v){["vStart","vExam","vResults","vPaper"].forEach(x=>$(x).classList.toggle("hide",x!==v));window.scrollTo(0,0)}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function clearSave(){try{localStorage.removeItem(KEY)}catch(e){}}
+function loadSave(){try{return JSON.parse(localStorage.getItem(KEY)||"null")}catch(e){return null}}
+
+// Build a form: order of questions + per-question option permutation
+function buildForm(seed){
+ const r=rng(seed);
+ const order=shuffle(Q.map((_,i)=>i),r);
+ const perm={};order.forEach(i=>perm[i]=shuffle([0,1,2,3],r));
+ return {order,perm};
+}
+
+function init(){
+ let h="<tr><th>Domain</th><th>Weight</th><th>Items</th></tr>";
+ for(const d in DOM){const n=Q.filter(q=>q.d==d).length;h+=`<tr><td>${d}. ${DOM[d]}</td><td>${WT[d]}%</td><td>${n}</td></tr>`}
+ h+=`<tr><th>Total</th><th>100%</th><th>${Q.length}</th></tr>`;$("wtTable").innerHTML=h;
+ const sv=loadSave();if(sv&&!sv.done)$("resumeBtn").classList.remove("hide");
+}
+
+function startExam(mode){
+ const seed=(Date.now()^Math.floor(Math.random()*1e9))>>>0;
+ const f=buildForm(seed);
+ S={mode,seed,order:f.order,perm:f.perm,ans:{},flag:{},pos:0,start:Date.now(),elapsed:0,name:$("cand").value.trim(),done:false};
+ save();runExam();
+}
+function resume(){S=loadSave();if(!S)return;S.start=Date.now()-S.elapsed*1000;runExam()}
+
+function runExam(){
+ show("vExam");
+ const ex=S.mode==="exam";
+ $("prevBtn").classList.remove("hide");$("flagBtn").classList.remove("hide");$("submitBtn").classList.remove("hide");$("navCard").classList.remove("hide");
+ $("examHint").textContent=ex?"Exam rules (ISACA): you may flag items, go back and change answers until you submit or time expires. Unanswered items score zero, and there is no penalty for guessing.":"Study mode: the answer and explanation appear as soon as you choose an option.";
+ $("hdrinfo").textContent=ex?"Exam simulation":"Study mode";
+ if(ex){$("timer").classList.remove("hide");clearInterval(tick);tick=setInterval(timerTick,1000);timerTick()}
+ render();
+}
+function timerTick(){
+ S.elapsed=Math.floor((Date.now()-S.start)/1000);
+ const left=Math.max(0,TIME-S.elapsed);
+ const h=Math.floor(left/3600),m=Math.floor(left%3600/60),s=left%60;
+ $("timer").textContent=`${h}:${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;
+ if(left<=600)$("timer").style.background="rgba(180,35,24,.6)";
+ if(S.elapsed%15===0)save();
+ if(left<=0)finish("time");
+}
+
+function render(){
+ const qi=S.order[S.pos],q=Q[qi],p=S.perm[qi],ex=S.mode==="exam",n=S.order.length;
+ const answered=Object.keys(S.ans).length;
+ $("qnum").textContent=`Item ${S.pos+1} of ${n} · ${answered} answered`;
+ $("qdom").textContent=ex?"":`Domain ${q.d}: ${DOM[q.d]}`;
+ $("prog").style.width=(answered/n*100)+"%";
+ $("stem").textContent=q.q;
+ const reveal=!ex&&S.ans[qi]!==undefined;
+ let h="";p.forEach((oi,k)=>{const on=S.ans[qi]===oi;let st="";if(reveal){if(oi===0)st=' style="border-color:var(--ok);background:#eaf6ee"';else if(on)st=' style="border-color:var(--bad);background:#fdeceb"'}
+  h+=`<label class="opt${on?" on":""}"${st}><input type="radio" name="o" value="${oi}" ${on?"checked":""} ${reveal?"disabled":""} onchange="pick(${qi},${oi})"><span class="letter">${L[k]}.</span><span>${esc(q.o[oi])}</span></label>`});
+ $("opts").innerHTML=h;
+ const fb=$("fb");
+ if(reveal){const ok=S.ans[qi]===0;fb.className="";fb.innerHTML=`<div class="exp small"><b class="${ok?"tag-ok":"tag-bad"}">${ok?"Correct.":"Incorrect."}</b> Correct answer: <b>${L[p.indexOf(0)]}</b>. ${esc(q.e)}<div class="src">Source: ${esc(q.s)}</div></div>`}else{fb.className="hide";fb.innerHTML=""}
+ $("prevBtn").disabled=S.pos===0;
+ $("nextBtn").classList.toggle("hide",S.pos===n-1);
+ $("flagBtn").textContent=S.flag[qi]?"Unflag":"Flag for review";
+ $("submitBtn").textContent=ex?"Review & submit":"Finish & score";
+ renderGrid();
+}
+function pick(qi,oi){S.ans[qi]=oi;save();render()}
+function toggleFlag(){const qi=S.order[S.pos];S.flag[qi]=!S.flag[qi];save();render()}
+function go(d){S.pos=Math.max(0,Math.min(S.order.length-1,S.pos+d));save();render();window.scrollTo(0,0)}
+function jump(i){S.pos=i;save();render();window.scrollTo(0,0)}
+function renderGrid(){let h="";S.order.forEach((qi,i)=>{h+=`<button class="${S.ans[qi]!==undefined?"ans":""} ${S.flag[qi]?"flag":""} ${i===S.pos?"cur":""}" onclick="jump(${i})">${i+1}</button>`});$("grid").innerHTML=h}
+function next(){go(1)}
+
+function seenCount(){return S.order.length}
+function finish(reason){
+ if(reason==="submitted"){
+  const un=S.order.filter(k=>S.ans[k]===undefined).length,fl=S.order.filter(k=>S.flag[k]).length;
+  if(!confirm(`Review before submitting:\n• Unanswered: ${un} (scored as incorrect)\n• Flagged: ${fl}\n\nUse the navigator to review. Submit the exam now?`))return;
+ }
+ clearInterval(tick);S.done=true;S.reason=reason;S.elapsed=Math.min(TIME,Math.floor((Date.now()-S.start)/1000));S.end=Date.now();save();results();
+}
+
+function results(){
+ show("vResults");$("timer").classList.add("hide");$("hdrinfo").textContent="Results";
+ const n=S.order.length;
+ let c=0;const dc={},dn={};for(const d in DOM){dc[d]=0;dn[d]=0}
+ S.order.forEach(k=>{const q=Q[k];dn[q.d]++;if(S.ans[k]===0){c++;dc[q.d]++}});
+ const pct=c/n,scaled=scaledOf(pct),pass=scaled>=450;
+ const un=S.order.filter(k=>S.ans[k]===undefined).length;
+ let why=S.reason==="time"?"Time expired, so the exam was submitted automatically. ":"";
+ why+=`Estimated using the stated assumption that 65% correct ≈ 450 scaled. ISACA does not publish its raw-to-scaled conversion.${un?" "+un+" unanswered item(s) were scored as incorrect.":""}`;
+ const mins=Math.floor(S.elapsed/60);
+ $("rMeta").textContent=`${S.name?S.name+" · ":""}${S.mode==="exam"?"Exam simulation":"Study mode"} · ${new Date(S.end).toLocaleString()} · ${n} items · ${Math.floor(mins/60)}h ${mins%60}m used`;
+ $("rVerdict").innerHTML=pass?'<span class="pass">PASS</span>':'<span class="fail">FAIL</span>';
+ $("rScore").innerHTML=`Estimated scaled score: <b>${scaled}</b> (range 200–800, passing 450) · ${c} of ${n} correct (${(pct*100).toFixed(1)}%)`+(pass&&pct<0.75?' <span class="pill">Borderline: aim for 75%+</span>':"");
+ $("rWhy").textContent=why;
+ const rows=Object.keys(DOM).map(d=>({d,p:dc[d]/dn[d]})).sort((a,b)=>a.p-b.p);
+ let h="<tr><th>Domain</th><th>Weight</th><th>Correct</th><th>Score</th></tr>";
+ rows.forEach(r=>{const pc=Math.round(r.p*100);h+=`<tr><td>${r.d}. ${DOM[r.d]}</td><td>${WT[r.d]}%</td><td>${dc[r.d]}/${dn[r.d]}</td><td><div class="row" style="gap:8px;flex-wrap:nowrap"><div class="bar" style="flex:1"><i style="width:${pc}%;background:${pc>=65?"var(--ok)":"var(--bad)"}"></i></div><b>${pc}%</b></div></td></tr>`});
+ $("rDomains").innerHTML=h;renderAK();
+}
+
+function akItem(k,num,state){
+ const q=Q[k],p=S.perm[k],ua=S.ans[k];
+ const corrL=L[p.indexOf(0)],yourL=ua===undefined?null:L[p.indexOf(ua)];
+ const tag=state==="unseen"?'<span class="tag-na">Not reached</span>':ua===undefined?'<span class="tag-bad">Unanswered</span>':ua===0?'<span class="tag-ok">Correct</span>':'<span class="tag-bad">Incorrect</span>';
+ let o="";p.forEach((oi,i)=>{o+=`<div class="small">${oi===0?"<b>":""}${L[i]}. ${esc(q.o[oi])}${oi===0?" ✓</b>":""}${oi===ua&&ua!==0?' <span class="tag-bad">← your answer</span>':""}</div>`});
+ return `<div class="ak"><div class="row spread small"><span><b>${num}.</b> ${tag}${S.flag[k]?' <span class="pill">Flagged</span>':""}</span><span class="pill">D${q.d} · ${DOM[q.d]}</span></div><div style="margin:6px 0">${esc(q.q)}</div>${o}<div class="small" style="margin-top:4px">Your answer: <b>${yourL||"—"}</b> · Correct: <b>${corrL}</b></div><div class="exp small">${esc(q.e)}</div><div class="src">Source: ${esc(q.s)}</div></div>`;
+}
+function renderAK(){
+ const f=$("akFilter").value,n=seenCount();let h="";
+ S.order.forEach((k,i)=>{const seen=i<n,st=seen?"seen":"unseen";
+  if(f==="unseen"&&S.ans[k]!==undefined)return;
+  if(f==="wrong"&&!(seen&&S.ans[k]!==0))return;if(f==="flag"&&!S.flag[k])return;
+  h+=akItem(k,i+1,st)});
+ $("ak").innerHTML=h||'<p class="muted">No items in this view.</p>';
+}
+
+function csvCell(s){return '"'+String(s).replace(/"/g,'""')+'"'}
+function downloadCSV(){
+ const n=seenCount();let rows=[["Item","Domain","Domain name","Result","Your answer","Correct answer","Question","Correct option text","Explanation","Source"]];
+ S.order.forEach((k,i)=>{const q=Q[k],p=S.perm[k],ua=S.ans[k];const res=i>=n?"Not reached":ua===undefined?"Unanswered":ua===0?"Correct":"Incorrect";
+  rows.push([i+1,q.d,DOM[q.d],res,ua===undefined?"":L[p.indexOf(ua)],L[p.indexOf(0)],q.q,q.o[0],q.e,q.s])});
+ dl("aair-practice-results.csv",rows.map(r=>r.map(csvCell).join(",")).join("\r\n"),"text/csv");
+}
+function downloadHTMLReport(){
+ const css=document.querySelector("style").outerHTML;
+ const body=`<main>${$("vResults").innerHTML}</main>`;
+ dl("aair-practice-results.html",`<!DOCTYPE html><html><head><meta charset="utf-8"><title>AAIR Practice Results</title>${css}</head><body>${body}</body></html>`,"text/html");
+}
+function dl(name,data,type){const b=new Blob([data],{type}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)}
+
+function showPaper(){
+ show("vPaper");$("hdrinfo").textContent="Paper version";
+ const f=buildForm(2026);let qh="",kh="";
+ f.order.forEach((k,i)=>{const q=Q[k],p=f.perm[k];
+  qh+=`<li>${esc(q.q)}${p.map((oi,j)=>`<div class="po">${L[j]}. ${esc(q.o[oi])}</div>`).join("")}</li>`;
+  kh+=`<div class="ak"><b>${i+1}. ${L[p.indexOf(0)]}</b> — ${esc(q.o[0])} <span class="pill">D${q.d}</span><div class="exp small">${esc(q.e)}</div><div class="src">Source: ${esc(q.s)}</div></div>`});
+ $("paperQ").innerHTML=qh;
+ let grid='<table class="small"><tr>';f.order.forEach((k,i)=>{grid+=`<td>${i+1}. <b>${L[f.perm[k].indexOf(0)]}</b></td>`;if((i+1)%10===0)grid+="</tr><tr>"});grid+="</tr></table>";
+ $("paperK").innerHTML=`<h3>Quick key</h3>${grid}<h3>Explanations</h3>${kh}`;
+}
+
+window.addEventListener("beforeunload",()=>{if(S&&!S.done){S.elapsed=Math.floor((Date.now()-S.start)/1000);save()}});
+init();
+</script>
+</body>
+</html>
